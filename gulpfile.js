@@ -80,7 +80,7 @@ gulp.task('connect', ['styles'], function() {
   var serveIndex = require('serve-index');
   var port = process.env.PORT || 8000;
   var app = require('connect')()
-    .use(require('connect-livereload')({port: port}))
+    // .use(require('connect-livereload')({port: port}))
     .use(serveStatic('.tmp'))
     .use(serveStatic('app'))
     // paths to bower_components should be relative to the current file
