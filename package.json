@@ -5,7 +5,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "gulp serve"
+    "start": "gulp connect"
   },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
