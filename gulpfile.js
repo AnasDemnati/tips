@@ -82,11 +82,11 @@ gulp.task('connect', ['styles'], function() {
   var app = require('connect')()
     // .use(require('connect-livereload')({port: port}))
     .use(serveStatic('.tmp'))
-    .use(serveStatic('app'))
+    .use(serveStatic('public/app'))
     // paths to bower_components should be relative to the current file
     // e.g. in app/index.html you should use ../bower_components
     .use('/bower_components', serveStatic('bower_components'))
-    .use(serveIndex('app'));
+    .use(serveIndex('public/app'));
 
   require('http').createServer(app)
     .listen(port)
